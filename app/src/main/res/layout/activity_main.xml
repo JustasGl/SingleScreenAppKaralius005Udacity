@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heghtOfViewpager"
+                android:layout_alignParentTop="true" />
+            <LinearLayout
+                android:id="@+id/SliderDots"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/paddingOfSliderDots"/>
+        </RelativeLayout>
+        <TextView
+            style="@style/textview"
+            android:text="@string/optika_vizija"
+            android:textSize="32sp"
+            />
+        <TextView
+           style="@style/textview"
+            android:autoLink="phone"
+            android:text="@string/_370_614_11414"
+            />
+        <TextView
+            style="@style/textview"
+            android:text="@string/info_optikavizija_lt"
+            android:autoLink="email"
+            />
+    </LinearLayout>
+</ScrollView>
